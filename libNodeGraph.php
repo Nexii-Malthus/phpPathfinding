@@ -7,23 +7,17 @@ interface NodeGraph {
 	// Note that $Node, $NodeFrom and $NodeTo should be an integer for array lookup purposes.
 	
 	
-	public function Neighbours($Node) {
+	public function Neighbours($Node);
 		// Return an array of connected neighbours.
-		return Array();
-	}
 	
-	public function G($NodeFrom, $NodeTo) {
+	public function G($NodeFrom, $NodeTo);
 		// We need the 'G' costs. The cost of choosing this node. (Choice costs? -- i.e. breaking down a door)
 		// You may interpret this as how difficult it would be to move to/in this node. (Movement costs?)
 		// As if it were a slope or other difficult terrain to manouver. (Terrain costs?)
-		return 0;
-	}
 	
-	public function H($NodeFrom, $NodeTo) {
+	public function H($NodeFrom, $NodeTo);
 		// We want the 'H' or heuristic cost between two nodes.
 		// You can interpret this as the euclidean distance.
 		// Using square roots isn't too bad and returns an extremely accurate result we need for a good path.
-		return 0;
-	}
 }
 ?>

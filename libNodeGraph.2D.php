@@ -1,10 +1,12 @@
 <?php
 // Released to Public Domain. Created by Nexii Malthus.
 
-class NodeGraph2D {
+require_once 'libNodeGraph.php';
+
+class NodeGraph2D implements NodeGraph {
 	// This is an example class of a node graph.
-	// We don't have to really extend the NodeGraph class, as all methods are overwritten anyways.
-	// Nodes are in a fixed 2D tile grid of a known size.
+	// We implement the interface as defined by NodeGraph
+	// In this Graph representation, Nodes are in a fixed 2D tile grid of a known size.
 	// The grid is spaced at 1.0 unit apart. Creating a distance of sqrt(2) for diagonal tiles.
 	// $Tiles is a two-dimensional array (Array[X][Y])
 	// storing one float which is used for G cost or to define an obstruction.

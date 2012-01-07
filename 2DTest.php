@@ -148,10 +148,10 @@
 			}
 			
 			foreach($Table as $Y => $Cols) {
-				echo '<tr>';
+				?><tr><?;
 				foreach($Cols as $X => $Class)
-					echo '<td class="'.$Class.'"></td>';
-				echo '</tr>';
+					?><td class="<?=$Class?>"></td><?;
+				?></tr><?;
 			}
 		?></table><?
 		$t3 = microtime(true);
