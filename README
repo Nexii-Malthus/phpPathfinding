@@ -1,2 +1,10 @@
 
-I have never touched PHP4 in my life, so I assume it should all work fine and dandy with PHP5.
+This is a pathfinding library that uses a flexible design so that it can be run with any navigation graph desirable, e.g. 2D tile grid, navigation meshes, etc.
+
+Waypoint and 2D grid graphs are provided.
+
+The pathfinding is the A* algorithm.
+
+
+
+It is licensed under a modified MIT License (the clause for requiring license to be included in all copies was removed)
